@@ -21,10 +21,10 @@ const App = () => {
 
 const styles = StyleSheet.create({
   center: {
-    flex : 1,
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  }
+  },
 });
 
 export default App;
