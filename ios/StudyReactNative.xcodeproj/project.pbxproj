@@ -15,6 +15,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* StudyReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* StudyReactNativeTests.m */; };
+		3741FE2925DCCEAC0008982B /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3741FE2825DCCEAC0008982B /* SplashScreen.storyboard */; };
 		471379D5EAF6A08B12096C5D /* libPods-StudyReactNative-StudyReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8DCE4D201D84A7A682A892 /* libPods-StudyReactNative-StudyReactNativeTests.a */; };
 		66F3BA75DD130633B251BBBC /* libPods-StudyReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AD962D1307FAC0E33964E2 /* libPods-StudyReactNative.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -55,6 +56,7 @@
 		2D02E4901E0B4A5D006451C7 /* StudyReactNative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StudyReactNative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8DCE4D201D84A7A682A892 /* libPods-StudyReactNative-StudyReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyReactNative-StudyReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3552335A09AF570AE5AE03C2 /* Pods-StudyReactNative-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyReactNative-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-StudyReactNative-tvOS/Pods-StudyReactNative-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3741FE2825DCCEAC0008982B /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		37B053FE3BC36460A8EAA6F3 /* Pods-StudyReactNative-StudyReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyReactNative-StudyReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-StudyReactNative-StudyReactNativeTests/Pods-StudyReactNative-StudyReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		404906343A1EBEC88BC20755 /* libPods-StudyReactNative-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyReactNative-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73630AF7734A5A9D3F4126D5 /* Pods-StudyReactNative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyReactNative-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-StudyReactNative-tvOSTests/Pods-StudyReactNative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +150,6 @@
 				73630AF7734A5A9D3F4126D5 /* Pods-StudyReactNative-tvOSTests.debug.xcconfig */,
 				FEF84E69E0A1695D6130417D /* Pods-StudyReactNative-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				3741FE2825DCCEAC0008982B /* SplashScreen.storyboard */,
 				13B07FAE1A68108700A75B9A /* StudyReactNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* StudyReactNativeTests */,
@@ -341,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				3741FE2925DCCEAC0008982B /* SplashScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
