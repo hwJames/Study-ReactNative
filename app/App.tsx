@@ -8,12 +8,18 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
+import Header from './Header';
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   return (
     <View style={styles.center}>
+      <Header />
       <Text>Hello, World!</Text>
     </View>
   );
@@ -21,10 +27,10 @@ const App = () => {
 
 const styles = StyleSheet.create({
   center: {
-    flex : 1,
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  }
+  },
 });
 
 export default App;
