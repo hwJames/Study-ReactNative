@@ -15,7 +15,9 @@ import Header from './Header';
 
 const App = () => {
   useEffect(() => {
-    SplashScreen.hide();
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 1000);
   }, []);
   return (
     <View style={styles.center}>
