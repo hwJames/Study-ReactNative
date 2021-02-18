@@ -9,41 +9,12 @@
  */
 
 import 'react-native-gesture-handler';
-import React, {useEffect} from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
-import Header from './Header';
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-const MainScreen = ({navigation}: any) => {
-  useEffect(() => {
-    setTimeout(() => {
-      SplashScreen.hide();
-    }, 1000);
-  }, []);
-  return (
-    <SafeAreaView style={styles.container}>
-      <Header />
-      <Text onPress={() => navigation.navigate('Main2')}>Hello, World!</Text>
-    </SafeAreaView>
-  );
-};
-
-const MainScreen2 = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Header />
-      <Text>Hello, World2!</Text>
-    </SafeAreaView>
-  );
-};
+import MainScreen from '@screens/MainScreen';
+import Main2Screen from '@screens/Main2Screen';
 
 const Stack = createStackNavigator();
 
@@ -58,7 +29,7 @@ function App() {
         />
         <Stack.Screen
           name="Main2"
-          component={MainScreen2}
+          component={Main2Screen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
