@@ -2,11 +2,7 @@ import React from 'react';
 import {Text, View} from 'react-native';
 
 const Header = () => {
-  return (
-    <View>
-      <Text>This is Header!</Text>
-    </View>
-  );
+  return <Text>This is Header!</Text>;
 };
 
 export default Header;
