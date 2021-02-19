@@ -11,17 +11,23 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+// import {createStackNavigator} from '@react-navigation/stack';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import MainScreen from '@screens/MainScreen';
 import Main2Screen from '@screens/Main2Screen';
 
-const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
+// const Stack = createStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Drawer.Navigator initialRouteName="MainDrawer">
+        <Drawer.Screen name="Main" component={MainScreen} />
+        <Drawer.Screen name="Main2" component={Main2Screen} />
+      </Drawer.Navigator>
+      {/* <Stack.Navigator>
         <Stack.Screen
           name="Main"
           component={MainScreen}
@@ -32,7 +38,7 @@ function App() {
           component={Main2Screen}
           options={{headerShown: false}}
         />
-      </Stack.Navigator>
+      </Stack.Navigator> */}
     </NavigationContainer>
   );
 }
